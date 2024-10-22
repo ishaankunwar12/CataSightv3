@@ -20,13 +20,13 @@ PREDICTION_LABELS.sort()
 CSS_STYLE = """
     <style>
     .stApp {
-        background-color: #a18a89; /* Change this to any color you prefer */
+        background-color: #99d6ff; /* Change this to any color you prefer */
     }
     [data-testid="stSidebar"]{
-        background-color: #e0ded3;  /* Change this to any color you prefer */
+        background-color: #ffccff;  /* Change this to any color you prefer */
     }
     header, .css-1v3fvcr, .css-fg4pbf {
-        background-color: #a18a89; /* Ensures top bar matches background */
+        background-color: #99d6ff; /* Ensures top bar matches background */
     }
     </style>
     """
@@ -143,10 +143,12 @@ elif page == "**How App Works**":
         relevant features, and predicts whether the image shows signs of cataract.
 
         **Steps**:
-        1. Upload or capture an image of the eye.
-        2. The image is processed using a pre-trained deep learning model.
-        3. The machine learning model classifies the image as either 'Cataract' or 'Normal'.
-        4. The result is displayed along with a probability score.
+        1. Make sure you have your fundus image downloaded
+        2. Go to the home screen and click on the "image upload" tab 
+        3. Click "browse files" and choose the downloaded fundus image
+        4. The image is processed using a pre-trained deep learning model.
+        5. The machine learning model classifies the image as either 'Cataract' or 'Normal'.
+        6. The classification is displayed along with a probability score of how likely it is that the model is accurate
     """)
 
 elif page == "**Future Enhancement**":
